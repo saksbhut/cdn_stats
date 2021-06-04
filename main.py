@@ -32,8 +32,7 @@ if __name__ == '__main__':
     for entry in data:
         total_requests+=1
         url=entry['httpRequest']['requestUrl']
-        if url.find("?") == -1:
-            print("No 'is' here!")
+
         cacheid=entry['jsonPayload']['cacheId']
         status_details=entry['jsonPayload']['statusDetails']
         if status_details=="response_sent_by_backend":
